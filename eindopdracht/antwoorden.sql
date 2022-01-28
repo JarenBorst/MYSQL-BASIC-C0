@@ -13,7 +13,7 @@ SELECT ROUND(AVG(EU_Sales)) FROM videogamesales WHERE genre="Puzzle"
 -- Opdracht 7 
 SELECT name, genre, publisher FROM videogamesales WHERE JP_Sales="532"
 -- Opdracht 8
-SELECT COUNT(name) AS Nintendo_totaal FROM videogamesales WHERE publisher="Nintendo"
+SELECT COUNT(name) AS totaal_spellen_nintendo FROM videogamesales WHERE publisher="Nintendo"
 -- Opdracht 9
 SELECT name, year, genre FROM videogamesales WHERE publisher="Nintendo" AND genre="Racing" OR publisher="Activision" AND genre="Racing"
 -- Opdracht 10
@@ -21,7 +21,7 @@ SELECT ROUND(AVG(NA_Sales)) AS noord_amerika_verkoop, ROUND(AVG(EU_Sales)) AS eu
 -- Opdracht 11
 DELETE FROM videogamesales WHERE name="Halo 2" AND platform="XB"
 -- Opdracht 12
-DELETE FROM videogamesales WHERE year="2012" OR publisher="Ubisoft"
+DELETE FROM videogamesales WHERE year="2012" AND publisher="Ubisoft"
 -- Opdracht 13
 DELETE FROM videogamesales WHERE genre="Adventure" AND publisher="Nintendo"
 -- Opdracht 14
